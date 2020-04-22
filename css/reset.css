@@ -147,7 +147,7 @@ button::-moz-focus-inner {
 }
 
 a{
-  color: #696969;
+  color: currentColor;
   text-decoration: none;
 } 
 section {

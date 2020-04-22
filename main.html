@@ -8,11 +8,41 @@
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<div class="main-container">
+	<div class="main-container" id="main-container">
 		<header>
 			<div class="inside-header-container">
 				<div class="sidebar-navigation-and-mainlogo">
-					<i class="fa fa-bars"></i>
+						<div id="mySidenav" class="sidenav">
+							<div class="side-nav-icon-bar">	
+									<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-bars"></i></a>
+									<img src="img/utubelogo.png" class="side-main-logo">
+							</div>
+							<hr class="nav-header-hr">	
+  						<ul class="first-row-side">	
+								<li><a href="#" class="first-row-list"><i class="fa fa-home"></i>Home</a></li>
+  							<li><a href="#" class="first-row-list"><i class="fa fa-fire"></i>Trending</a></li>
+								<li><a href="#" class="first-row-list"><i class="fa fa-rss-square"></i>Subscriptions</a>	</li>							
+  						</ul>
+  						<hr class="first-rod-side-hr">	
+  						<ul class="first-row-side">	
+								<li><a href="#" class="first-row-list"><i class="fa fa-book"></i>Library</a></li>
+  							<li><a href="#" class="first-row-list"><i class="fa fa-history"></i>History</a></li>
+								<li><a href="#" class="first-row-list"><i class="fa fa-square"></i>Your videos</a></li>
+								<li><a href="#" class="first-row-list"><i class="fa fa-circle"></i>Watch later</a></li>
+								<li><a href="#" class="first-row-list"><i class="fa fa-thumbs-up"></i>Liked videos</a></li>							
+  						</ul>
+  						<hr class="first-rod-side-hr">
+  						<ul class="first-row-side">	
+								<li><a href="#" class="first-row-list subscription-row">SUBSCRIPTIONS</a></li>
+  							<li><a href="#" class="first-row-list"><i class="fa fa-user-circle circle"></i>History</a></li>
+								<li><a href="#" class="first-row-list"><i class="fa fa-user-circle circle"></i>Your videos</a></li>
+								<li><a href="#" class="first-row-list"><i class="fa fa-user-circle circle"></i>Watch later</a></li>
+								<li><a href="#" class="first-row-list"><i class="fa fa-user-circle circle"></i>Liked videos</a></li>							
+  						</ul>
+  						<hr class="first-rod-side-hr">
+  						<p class="footer-font">© 2020 Google LLC</p>
+					</div>
+					<i onclick="openNav()" class="fa fa-bars navi"></i>
 					<img src="img/utubelogo.png" class="main-logo">
 				</div>
 				<form class="example" action="/action_page.php">
@@ -21,13 +51,24 @@
 				</form>
 				<div class="icon-group">
 					<img src="img/search.png" class="search-img" alt="search image">
-					<i class="fa fa-bars bar"></i>
-					<i class="fa fa-bars bar" ></i>
-					<i class="fa fa-bars bar"></i>
-					<i class="fa fa-user profile"></i>
+					<i class="fa fa-camera bar"></i>
+					<i class="fa fa-square bar" ></i>
+					<i class="fa fa-bell bar"></i>
+					<p class="profile">L</p>
 				</div>
 			</div>
 		</header>
+		<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.body.style.backgroundColor = "#F6F7F7";
+}
+</script>
 		<div class="body-container">
 			<section class="clearFix">
 				<div><iframe src="https://www.youtube.com/embed/5jQSat1cKMo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" class="first-embed" allowfullscreen></iframe></div>
@@ -93,7 +134,51 @@
 							<li><p class="card-content-foot">4.4M views 5 years ago</p></li>
 						</ul>
 					</div>
-						<hr>
+						
+				</div>
+				<div class="aside-body margin-bt-10px">
+					<div class="cd ">
+						<iframe width="150" height="95" src="https://www.youtube.com/embed/qVTAB8Z2VmA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" class="second-embed" allowfullscreen></iframe>
+						<ul class="cd-body">
+							<li><p class="card-content-header">REST API concepts and examples</p></li>
+							<li><p class="card-content-body">WebConcept</p></li>
+							<li><p class="card-content-foot">4.4M views 5 years ago</p></li>
+						</ul>
+					</div>
+						
+				</div>
+				<div class="aside-body margin-bt-10px">
+					<div class="cd ">
+						<iframe width="150" height="95" src="https://www.youtube.com/embed/qVTAB8Z2VmA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" class="second-embed" allowfullscreen></iframe>
+						<ul class="cd-body">
+							<li><p class="card-content-header">REST API concepts and examples</p></li>
+							<li><p class="card-content-body">WebConcept</p></li>
+							<li><p class="card-content-foot">4.4M views 5 years ago</p></li>
+						</ul>
+					</div>
+						
+				</div>
+				<div class="aside-body margin-bt-10px">
+					<div class="cd ">
+						<iframe width="150" height="95" src="https://www.youtube.com/embed/qVTAB8Z2VmA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" class="second-embed" allowfullscreen></iframe>
+						<ul class="cd-body">
+							<li><p class="card-content-header">REST API concepts and examples</p></li>
+							<li><p class="card-content-body">WebConcept</p></li>
+							<li><p class="card-content-foot">4.4M views 5 years ago</p></li>
+						</ul>
+					</div>
+						
+				</div>
+				<div class="aside-body margin-bt-10px">
+					<div class="cd ">
+						<iframe width="150" height="95" src="https://www.youtube.com/embed/qVTAB8Z2VmA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" class="second-embed" allowfullscreen></iframe>
+						<ul class="cd-body">
+							<li><p class="card-content-header">REST API concepts and examples</p></li>
+							<li><p class="card-content-body">WebConcept</p></li>
+							<li><p class="card-content-foot">4.4M views 5 years ago</p></li>
+						</ul>
+					</div>
+						
 				</div>
 				<div class="aside-body">
 					<div class="cd ">
@@ -104,51 +189,7 @@
 							<li><p class="card-content-foot">4.4M views 5 years ago</p></li>
 						</ul>
 					</div>
-						<hr>
-				</div>
-				<div class="aside-body">
-					<div class="cd ">
-						<iframe width="150" height="95" src="https://www.youtube.com/embed/qVTAB8Z2VmA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" class="second-embed" allowfullscreen></iframe>
-						<ul class="cd-body">
-							<li><p class="card-content-header">REST API concepts and examples</p></li>
-							<li><p class="card-content-body">WebConcept</p></li>
-							<li><p class="card-content-foot">4.4M views 5 years ago</p></li>
-						</ul>
-					</div>
-						<hr>
-				</div>
-				<div class="aside-body">
-					<div class="cd ">
-						<iframe width="150" height="95" src="https://www.youtube.com/embed/qVTAB8Z2VmA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" class="second-embed" allowfullscreen></iframe>
-						<ul class="cd-body">
-							<li><p class="card-content-header">REST API concepts and examples</p></li>
-							<li><p class="card-content-body">WebConcept</p></li>
-							<li><p class="card-content-foot">4.4M views 5 years ago</p></li>
-						</ul>
-					</div>
-						<hr>
-				</div>
-				<div class="aside-body">
-					<div class="cd ">
-						<iframe width="150" height="95" src="https://www.youtube.com/embed/qVTAB8Z2VmA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" class="second-embed" allowfullscreen></iframe>
-						<ul class="cd-body">
-							<li><p class="card-content-header">REST API concepts and examples</p></li>
-							<li><p class="card-content-body">WebConcept</p></li>
-							<li><p class="card-content-foot">4.4M views 5 years ago</p></li>
-						</ul>
-					</div>
-						<hr>
-				</div>
-				<div class="aside-body">
-					<div class="cd ">
-						<iframe width="150" height="95" src="https://www.youtube.com/embed/qVTAB8Z2VmA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" class="second-embed" allowfullscreen></iframe>
-						<ul class="cd-body">
-							<li><p class="card-content-header">REST API concepts and examples</p></li>
-							<li><p class="card-content-body">WebConcept</p></li>
-							<li><p class="card-content-foot">4.4M views 5 years ago</p></li>
-						</ul>
-					</div>
-						<hr>
+						
 				</div>
 			</aside>
 		</div>
