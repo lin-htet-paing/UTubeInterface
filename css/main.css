@@ -512,7 +512,9 @@ small {
 .second-cmt-sess {
 	display: none;
 }
-
+.last-hr {
+	display: none;
+}
 @media (max-width:1000px) {
 	.body-container {
 		display: flex;
